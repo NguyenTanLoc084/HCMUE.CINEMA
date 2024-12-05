@@ -12,15 +12,12 @@ function searchMovies() {
       { name: "giác quan thứ 6", link: "HK4.html" },
       { name: "sát thủ và vệ sĩ (2009)", link: "HK5.html" },
     ];
-  
-    // Tìm phim khớp với tên đã nhập
+
     const result = movies.find(movie => movie.name.includes(input));
   
     if (result) {
-      // Chuyển hướng đến liên kết của phim được tìm thấy
       window.location.href = result.link;
     } else {
-      // Hiển thị thông báo khi không tìm thấy
       alert("Không tìm thấy phim nào phù hợp. Vui lòng thử lại!");
     }
   }
