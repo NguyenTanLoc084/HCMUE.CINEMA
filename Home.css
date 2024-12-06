@@ -174,4 +174,118 @@ footer a:hover {
     background-color: #f39c12;
     color: #1c1c1c;
   }
+  .rating span {
+    cursor: pointer;
+    font-size: 1.2em;
+    color: gold;
+  }
+  
+  .rating-filter button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #f39c12;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .rating-filter button:hover {
+  }
+  .rating-filter {
+    position: relative;
+  }
+  
+  .filter-toggle {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px black;
+    background-color: black;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-options button {
+    padding: 8px;
+    margin: 5px 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .filter-options button:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  .hidden {
+    display: none;
+  }  
+  .movie-review {
+    margin-top: 10px;
+  }
+  
+  .movie-review textarea {
+    width: 100%;
+    height: 60px;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .movie-review button {
+    padding: 8px 12px;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .reviews {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .reviews p {
+    margin: 5px 0;
+    padding: 5px;
+    background: #f8f8f8;
+    border-left: 4px solid #f39c12;
+  }
+  .hidden {
+    display: none;
+  }
+  
+  .movie-card {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+  }
+  
+  .movie-card img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+  }
+  
+
+  
+
   
