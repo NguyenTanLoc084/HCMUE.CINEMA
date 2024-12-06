@@ -1,93 +1,106 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-    <header>
-      <a href="#" class="logo">HCMUE CINEMA</a>
-      <div class="search-bar">
-        <input type="text" id="searchInput" placeholder="Tìm kiếm phim hoặc diễn viên...">
-        <button onclick="searchMovies()">Tìm Kiếm</button>
-      </div>
-    </header>
-    <link rel="stylesheet" href="Home.css">
-  </head>
-</header>  
-<script src="Search.js"></script>
-<nav class="navigation-menu">
-  <ul>
-    <li><a href="index.html">Trang chủ</a></li>
-    <li><a href="#korean-movies">Phim Hàn Quốc</a></li>
-    <li><a href="#hongkong-movies">Phim Hồng Kông</a></li>
-    <li><a href="#register">Đăng ký tài khoản</a></li>
-  </ul>
-</nav>
+<head>
+  <link rel="stylesheet" href="CSS/Home.css">
+  <script src="Rating.js"></script>
+  <script src="Search.js"></script>
+</head>
 <body>
+  <header>
+    <a href="#" class="logo">HCMUE CINEMA</a>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Tìm kiếm phim hoặc diễn viên...">
+      <button onclick="searchMovies()">Tìm Kiếm</button>
+    </div>
+  </header>
+  <nav class="navigation-menu">
+    <ul>
+      <li><a href="Home.html">Trang chủ</a></li>
+      <li><a href="#korean-movies">Phim Hàn Quốc</a></li>
+      <li><a href="#hongkong-movies">Phim Hồng Kông</a></li>
+      <li><a href="#register">Đăng ký tài khoản</a></li>
+      <li>
+        <div class="rating-filter">
+          <button class="filter-toggle" onclick="toggleFilter()">Chọn Đánh Giá</button>
+          <div class="filter-options hidden">
+            <button onclick="searchByRating(5)">5⭐</button>
+            <button onclick="searchByRating(4)">4⭐</button>
+            <button onclick="searchByRating(3)">3⭐</button>
+            <button onclick="searchByRating(2)">2⭐</button>
+            <button onclick="searchByRating(1)">1⭐</button>
+            <button onclick="searchByRating(0)">Tất cả</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
   <div class="banner">
     <h1>Enjoy Unlimited Movies</h1>
   </div>
   <section id="korean-movies" class="movies-section">
     <h2 class="movies-title">Phim Hàn Quốc</h2>
     <div class="movies-grid">
-      <div class="movie-card">
-        <a href=" K1.html" class="movie-card">
-        <img src="VHKLT.jpg" alt="Vây Hãm: Không Lối Thoát">
+      <div class="movie-card" data-rating="5">
+        <a href="K1.html">
+          <img src="VHKLT.jpg" alt="Vây Hãm: Không Lối Thoát">
         </a>
         <h3>Vây Hãm: Không Lối Thoát</h3>
       </div>
-      <div class="movie-card">
-        <a href=" K2.html" class="movie-card">
-        <img src="TK.jpg" alt="Tri Kỷ">
-      </a>
+      <div class="movie-card" data-rating="4">
+        <a href="K2.html">
+          <img src="TK.jpg" alt="Tri Kỷ">
+        </a>
         <h3>Tri Kỷ</h3>
       </div>
-      <div class="movie-card">
-        <a href=" K3.html" class="movie-card">
-        <img src="TTM.jpg" alt="Trạm Tàu Ma">
+      <div class="movie-card" data-rating="3">
+        <a href="K3.html">
+          <img src="TTM.jpg" alt="Trạm Tàu Ma">
         </a>
         <h3>Trạm Tàu Ma</h3>
       </div>
-      <div class="movie-card">
-        <a href=" K4.html" class="movie-card">
-        <img src="QXGH.jpg" alt="Quái xế giao hàng">
+      <div class="movie-card" data-rating="5">
+        <a href="K4.html">
+          <img src="QXGH.jpg" alt="Quái xế giao hàng">
         </a>
         <h3>Quái xế giao hàng</h3>
       </div>
-      <div class="movie-card">
-        <a href=" K5.html" class="movie-card">
-        <img src="STNT.jpg" alt="Sát Thủ Nhân Tạo 2">
+      <div class="movie-card" data-rating="2">
+        <a href="K5.html">
+          <img src="STNT.jpg" alt="Sát Thủ Nhân Tạo 2">
         </a>
         <h3>Sát Thủ Nhân Tạo 2</h3>
       </div>
     </div>
   </section>
-
   <section id="hongkong-movies" class="movies-section">
-    <h2 class="movies-title">Phim Hong Kong</h2>
+    <h2 class="movies-title">Phim Hồng Kông</h2>
     <div class="movies-grid-horizontal">
-      <div class="movie-card">
-        <a href=" HK1.html" class="movie-card">
-        <img src="ĐBTL.jpg" alt="Đội Bóng Thiếu Lâm">
+      <div class="movie-card" data-rating="4">
+        <a href="HK1.html">
+          <img src="ĐBTL.jpg" alt="Đội Bóng Thiếu Lâm">
         </a>
         <h3>Đội Bóng Thiếu Lâm</h3>
       </div>
-      <div class="movie-card">
-        <a href=" HK2.html" class="movie-card">
-        <img src="CLT.jpg" alt="Cửu Long Thành Trại">
+      <div class="movie-card" data-rating="3">
+        <a href="HK2.html">
+          <img src="CLT.jpg" alt="Cửu Long Thành Trại">
         </a>
         <h3>Cửu Long Thành Trại</h3>
       </div>
-      <div class="movie-card">
-        <a href=" HK3.html" class="movie-card">
-        <img src="CCTL.jpg" alt="Cuộc Chiến Tương Lai">
+      <div class="movie-card" data-rating="5">
+        <a href="HK3.html">
+          <img src="CCTL.jpg" alt="Cuộc Chiến Tương Lai">
         </a>
         <h3>Cuộc Chiến Tương Lai</h3>
       </div>
-      <div class="movie-card">
-        <a href=" HK4.html" class="movie-card">
-        <img src="GQT6.webp" alt="Giác Quan Thứ 6">
+      <div class="movie-card" data-rating="2">
+        <a href="HK4.html">
+          <img src="GQT6.webp" alt="Giác Quan Thứ 6">
         </a>
         <h3>Giác Quan Thứ 6</h3>
       </div>
-      <div class="movie-card">
-        <a href=" HK5.html" class="movie-card">
+      <div class="movie-card" data-rating="5">
+        <a href=" HK5.html">
         <img src="ST&VS.jpg" alt="Sát Thủ và Vệ Sĩ (2009)">
         </a>
         <h3>Sát Thủ và Vệ Sĩ (2009)</h3>
@@ -109,14 +122,10 @@
       </form>
       <div id="userInfo" style="margin-top: 20px; color: #fff; display: none;">
         <h3>Thông Tin Của Bạn</h3>
-        <p><strong>Tên Đăng Nhập:</strong> </p>
-        <p><strong>Email:</strong></p>
+        <p><strong>Tên Đăng Nhập:</strong> <span id="displayUsername"></span></p>
+        <p><strong>Email:</strong> <span id="displayEmail"></span></p>
       </div>
     </div>
   </section>
   <footer>
-    <p>HCMUE Cinema. Designed by <a href="https://www.facebook.com/profile.php?id=100029877184393">TanLoc</a> <a href="https://www.facebook.com/van.thanhnam.58">& Royal Fox</a>.</p>
-  </footer>
-  <script src="Js/Search.js"></script>  
-</body>
-</html>
+    <p>HCMUE Cinema. Designed by <a href="https://www.facebook.com/profile.php?id=100029877184393">TanLoc</a> & <a href="https
