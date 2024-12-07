@@ -285,7 +285,12 @@ footer a:hover {
     object-fit: cover;
   }
   
+  .movie-card h3 {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
 
-  
-
-  
+  .movie-card h4 {
+    margin: 0;
+  }

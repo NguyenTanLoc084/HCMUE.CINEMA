@@ -1,131 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="Home.css">
-  <script src="Rating.js"></script>
-  <script src="Search.js"></script>
-</head>
-<body>
-  <header>
-    <a href="#" class="logo">HCMUE CINEMA</a>
-    <div class="search-bar">
-      <input type="text" id="searchInput" placeholder="Tìm kiếm phim hoặc diễn viên...">
-      <button onclick="searchMovies()">Tìm Kiếm</button>
-    </div>
-  </header>
-  <nav class="navigation-menu">
-    <ul>
-      <li><a href="index.html">Trang chủ</a></li>
-      <li><a href="#korean-movies">Phim Hàn Quốc</a></li>
-      <li><a href="#hongkong-movies">Phim Hồng Kông</a></li>
-      <li><a href="#register">Đăng ký tài khoản</a></li>
-      <li>
-        <div class="rating-filter">
-          <button class="filter-toggle" onclick="toggleFilter()">Chọn Đánh Giá</button>
-          <div class="filter-options hidden">
-            <button onclick="searchByRating(5)">5⭐</button>
-            <button onclick="searchByRating(4)">4⭐</button>
-            <button onclick="searchByRating(3)">3⭐</button>
-            <button onclick="searchByRating(2)">2⭐</button>
-            <button onclick="searchByRating(1)">1⭐</button>
-            <button onclick="searchByRating(0)">Tất cả</button>
+  <head>
+    <link rel="stylesheet" href="Home.css">
+    <script src="Rating.js"></script>
+    <script src="Search.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">HCMUE CINEMA</a>
+      <div class="search-bar">
+        <input type="text" id="searchInput"
+          placeholder="Tìm kiếm phim hoặc diễn viên...">
+        <button onclick="searchMovies()">Tìm Kiếm</button>
+      </div>
+    </header>
+    <nav class="navigation-menu">
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="#korean-movies">Phim Hàn Quốc</a></li>
+        <li><a href="#hongkong-movies">Phim Hồng Kông</a></li>
+        <li><a href="#register">Đăng ký tài khoản</a></li>
+        <li>
+          <div class="rating-filter">
+            <button class="filter-toggle" onclick="toggleFilter()">Chọn Đánh
+              Giá</button>
+            <div class="filter-options hidden">
+              <button onclick="searchByRating(5)">5⭐</button>
+              <button onclick="searchByRating(4)">4⭐</button>
+              <button onclick="searchByRating(3)">3⭐</button>
+              <button onclick="searchByRating(2)">2⭐</button>
+              <button onclick="searchByRating(1)">1⭐</button>
+              <button onclick="searchByRating(0)">Tất cả</button>
+            </div>
           </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="banner">
+      <h1>Enjoy Unlimited Movies</h1>
+    </div>
+    <section id="korean-movies" class="movies-section">
+      <h2 class="movies-title">Phim Hàn Quốc</h2>
+      <div class="movies-grid">
+        <div class="movie-card" data-rating="5">
+          <a href="K1.html">
+            <img src="VHKLT.jpg" alt="Vây Hãm: Không Lối Thoát">
+          </a>
+          <h3>Vây Hãm: Không Lối Thoát</h3>
+          <h4>5⭐</h4>
         </div>
-      </li>
-    </ul>
-  </nav>
-  <div class="banner">
-    <h1>Enjoy Unlimited Movies</h1>
-  </div>
-  <section id="korean-movies" class="movies-section">
-    <h2 class="movies-title">Phim Hàn Quốc</h2>
-    <div class="movies-grid">
-      <div class="movie-card" data-rating="5">
-        <a href="K1.html">
-          <img src="VHKLT.jpg" alt="Vây Hãm: Không Lối Thoát">
-        </a>
-        <h3>Vây Hãm: Không Lối Thoát</h3>
+        <div class="movie-card" data-rating="4">
+          <a href="K2.html">
+            <img src="TK.jpg" alt="Tri Kỷ">
+          </a>
+          <h3>Tri Kỷ</h3>
+          <h4>4⭐</h4>
+        </div>
+        <div class="movie-card" data-rating="3">
+          <a href="K3.html">
+            <img src="TTM.jpg" alt="Trạm Tàu Ma">
+          </a>
+          <h3>Trạm Tàu Ma</h3>
+          <h4>3⭐</h4>
+        </div>
+        <div class="movie-card" data-rating="5">
+          <a href="K4.html">
+            <img src="QXGH.jpg" alt="Quái xế giao hàng">
+          </a>
+          <h3>Quái xế giao hàng</h3>
+          <h4>5⭐</h4>
+        </div>
+        <div class="movie-card" data-rating="2">
+          <a href="K5.html">
+            <img src="STNT.jpg" alt="Sát Thủ Nhân Tạo 2">
+          </a>
+          <h3>Sát Thủ Nhân Tạo 2</h3>
+          <h4>2⭐</h4>
+        </div>
       </div>
-      <div class="movie-card" data-rating="4">
-        <a href="K2.html">
-          <img src="TK.jpg" alt="Tri Kỷ">
-        </a>
-        <h3>Tri Kỷ</h3>
+    </section>
+    <section id="hongkong-movies" class="movies-section">
+      <h2 class="movies-title">Phim Hồng Kông</h2>
+      <div class="movies-grid-horizontal">
+        <div class="movie-card" data-rating="4">
+          <a href="HK1.html">
+            <img src="ĐBTL.jpg" alt="Đội Bóng Thiếu Lâm">
+          </a>
+          <h3>Đội Bóng Thiếu Lâm</h3>
+          <h4>4⭐</h4>
+        </div>
+        <div class="movie-card" data-rating="3">
+          <a href="HK2.html">
+            <img src="CLT.jpg" alt="Cửu Long Thành Trại">
+          </a>
+          <h3>Cửu Long Thành Trại</h3>
+          <h4>3⭐</h4>
+        </div>
+        <div class="movie-card" data-rating="5">
+          <a href="HK3.html">
+            <img src="CCTL.jpg" alt="Cuộc Chiến Tương Lai">
+          </a>
+          <h3>Cuộc Chiến Tương Lai</h3>
+          <h4>5⭐</h4>
+        </div>
+        <div class="movie-card" data-rating="2">
+          <a href="HK4.html">
+            <img src="GQT6.webp" alt="Giác Quan Thứ 6">
+          </a>
+          <h3>Giác Quan Thứ 6</h3>
+          <h4>2⭐</h4>
+        </div>
+        <div class="movie-card" data-rating="5">
+          <a href=" HK5.html">
+            <img src="ST&VS.jpg" alt="Sát Thủ và Vệ Sĩ (2009)">
+          </a>
+          <h3>Sát Thủ và Vệ Sĩ (2009)</h3>
+          <h4>5⭐</h4>
+        </div>
       </div>
-      <div class="movie-card" data-rating="3">
-        <a href="K3.html">
-          <img src="TTM.jpg" alt="Trạm Tàu Ma">
-        </a>
-        <h3>Trạm Tàu Ma</h3>
+    </section>
+    <section id="register"
+      style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #121212;">
+      <div
+        style="text-align: center; background-color: #1c1c1c; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);">
+        <h2 style="color: #f39c12;">Đăng Ký Thành Viên</h2>
+        <form id="userForm"
+          style="display: flex; flex-direction: column; gap: 10px;">
+          <label for="username" style="text-align: left;">Tên Đăng Nhập:</label>
+          <input type="text" id="username" name="username" required
+            style="padding: 10px; border: none; border-radius: 5px; background-color: #333; color: #fff;">
+          <label for="email" style="text-align: left;">Email:</label>
+          <input type="email" id="email" name="email" required
+            style="padding: 10px; border: none; border-radius: 5px; background-color: #333; color: #fff;">
+          <label for="password" style="text-align: left;">Mật Khẩu:</label>
+          <input type="password" id="password" name="password" required
+            style="padding: 10px; border: none; border-radius: 5px; background-color: #333; color: #fff;">
+          <button type="button" id="saveButton"
+            style="padding: 10px; background-color: #f39c12; border: none; border-radius: 5px; color: #fff; cursor: pointer;">Đăng
+            Ký</button>
+          <button type="button" id="editButton"
+            style="padding: 10px; background-color: #3498db; border: none; border-radius: 5px; color: #fff; cursor: pointer; display: none;">Sửa
+            Thông Tin</button>
+        </form>
+        <div id="userInfo"
+          style="margin-top: 20px; color: #fff; display: none;">
+          <h3>Thông Tin Của Bạn</h3>
+          <p><strong>Tên Đăng Nhập:</strong> <span
+              id="displayUsername"></span></p>
+          <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+        </div>
       </div>
-      <div class="movie-card" data-rating="5">
-        <a href="K4.html">
-          <img src="QXGH.jpg" alt="Quái xế giao hàng">
-        </a>
-        <h3>Quái xế giao hàng</h3>
-      </div>
-      <div class="movie-card" data-rating="2">
-        <a href="K5.html">
-          <img src="STNT.jpg" alt="Sát Thủ Nhân Tạo 2">
-        </a>
-        <h3>Sát Thủ Nhân Tạo 2</h3>
-      </div>
-    </div>
-  </section>
-  <section id="hongkong-movies" class="movies-section">
-    <h2 class="movies-title">Phim Hồng Kông</h2>
-    <div class="movies-grid-horizontal">
-      <div class="movie-card" data-rating="4">
-        <a href="HK1.html">
-          <img src="ĐBTL.jpg" alt="Đội Bóng Thiếu Lâm">
-        </a>
-        <h3>Đội Bóng Thiếu Lâm</h3>
-      </div>
-      <div class="movie-card" data-rating="3">
-        <a href="HK2.html">
-          <img src="CLT.jpg" alt="Cửu Long Thành Trại">
-        </a>
-        <h3>Cửu Long Thành Trại</h3>
-      </div>
-      <div class="movie-card" data-rating="5">
-        <a href="HK3.html">
-          <img src="CCTL.jpg" alt="Cuộc Chiến Tương Lai">
-        </a>
-        <h3>Cuộc Chiến Tương Lai</h3>
-      </div>
-      <div class="movie-card" data-rating="2">
-        <a href="HK4.html">
-          <img src="GQT6.webp" alt="Giác Quan Thứ 6">
-        </a>
-        <h3>Giác Quan Thứ 6</h3>
-      </div>
-      <div class="movie-card" data-rating="5">
-        <a href=" HK5.html">
-        <img src="ST&VS.jpg" alt="Sát Thủ và Vệ Sĩ (2009)">
-        </a>
-        <h3>Sát Thủ và Vệ Sĩ (2009)</h3>
-      </div>
-    </div>
-  </section>
-  <section id="register" style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #121212;">
-    <div style="text-align: center; background-color: #1c1c1c; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);">
-      <h2 style="color: #f39c12;">Đăng Ký Thành Viên</h2>
-      <form id="userForm" style="display: flex; flex-direction: column; gap: 10px;">
-        <label for="username" style="text-align: left;">Tên Đăng Nhập:</label>
-        <input type="text" id="username" name="username" required style="padding: 10px; border: none; border-radius: 5px; background-color: #333; color: #fff;">
-        <label for="email" style="text-align: left;">Email:</label>
-        <input type="email" id="email" name="email" required style="padding: 10px; border: none; border-radius: 5px; background-color: #333; color: #fff;">
-        <label for="password" style="text-align: left;">Mật Khẩu:</label>
-        <input type="password" id="password" name="password" required style="padding: 10px; border: none; border-radius: 5px; background-color: #333; color: #fff;">
-        <button type="button" id="saveButton" style="padding: 10px; background-color: #f39c12; border: none; border-radius: 5px; color: #fff; cursor: pointer;">Đăng Ký</button>
-        <button type="button" id="editButton" style="padding: 10px; background-color: #3498db; border: none; border-radius: 5px; color: #fff; cursor: pointer; display: none;">Sửa Thông Tin</button>
-      </form>
-      <div id="userInfo" style="margin-top: 20px; color: #fff; display: none;">
-        <h3>Thông Tin Của Bạn</h3>
-        <p><strong>Tên Đăng Nhập:</strong> <span id="displayUsername"></span></p>
-        <p><strong>Email:</strong> <span id="displayEmail"></span></p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <p>HCMUE Cinema. Designed by <a href="https://www.facebook.com/profile.php?id=100029877184393">TanLoc</a> & <a href="https://www.facebook.com/van.thanhnam.58"</a>
+    </section>
+    <footer>
+      <p>HCMUE Cinema. Designed by <a
+          href="https://www.facebook.com/profile.php?id=100029877184393">TanLoc</a>
+        & <a href="https://www.facebook.com/van.thanhnam.58"></a></p>
+    </body>
+  </html>
